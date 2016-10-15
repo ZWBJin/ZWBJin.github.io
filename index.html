@@ -11,6 +11,35 @@
 	<link rel="stylesheet" href="css/component.css" />
 	<link rel="stylesheet" href="css/index.css" />
 	<title>web前端工程师简历</title>
+	<style>
+	li{list-style: none;}
+		#div1{ width:600px; height:300px; border:1px red solid; margin:20px auto; position:relative;
+		 perspective:1000px;}
+ #div1 ul{ width:300px; height:400px; position:absolute; left:35%;top:20%; margin-left:-64px; margin-top:-47px; transform-style:preserve-3d;
+	animation:rota 20s linear infinite;;}
+	#div1 ul li img{
+		display: block;
+		width: 150px;
+		height: 250px;
+	}
+#div1 ul li{ width:50%; height:70%; position:absolute; left:0; top:0;}
+#div1 ul li:nth-of-type(1){ transform:rotateY(0deg) translateZ(150px);}
+#div1 ul li:nth-of-type(2){ transform:rotateY(60deg) translateZ(150px);}
+#div1 ul li:nth-of-type(3){ transform:rotateY(120deg) translateZ(150px);}
+#div1 ul li:nth-of-type(4){ transform:rotateY(180deg) translateZ(150px);}
+#div1 ul li:nth-of-type(5){ transform:rotateY(240deg) translateZ(150px);}
+#div1 ul li:nth-of-type(6){ transform:rotateY(300deg) translateZ(150px);}
+
+@keyframes rota {
+  0% {
+    transform:rotateY(0deg);
+  }
+
+  100% {
+   transform:rotateY(360deg);
+  }
+}
+	</style>
 </head>
 <body>
 <!-- header navigation -->
@@ -57,10 +86,10 @@
 				<div id="home_info">
 					<p id="home_info1">生活是一种绵延不绝的渴望,渴望不断上升,变得更伟大而高贵。</p>
 					<div id="home_info_box">
-						<p id="home_info2">我叫赵柯宇</p>
+						<p id="home_info2">我叫郑外彬</p>
 						<p id="home_info3">25岁</p>
-						<p id="home_info4">一名前端研发工程师</p>
-						<p id="home_info5">zhaoky2016@163.com</p>
+						<p id="home_info4">一名前端开发工程师</p>
+						<p id="home_info5">zwbjin0723@163.com</p>
 					</div>
 				</div>
 			</div>
@@ -85,11 +114,11 @@
                     </div>
                     <div class="about_list">
                         <div class="about_list_eg" id="about_en_loc">location</div>
-                        <div class="about_list_cn" id="about_cn_loc">坐标<p>成都</p></div>
+                        <div class="about_list_cn" id="about_cn_loc">坐标<p>杭州</p></div>
                     </div>
                     <div class="about_list">
                         <div class="about_list_eg" id="about_en_sta">status</div>
-                        <div class="about_list_cn" id="about_cn_sta">状态<p>在职</p></div>
+                        <div class="about_list_cn" id="about_cn_sta">状态<p>离职</p></div>
                     </div>
 				</div>
 				<div id="about_info"></div>
@@ -215,64 +244,18 @@
             	<div class="title">
                 	<h1>我的作品</h1>
                 </div>
-                <div id="demo_content_list">
-                    <ul class="demo_box">
-                    	<li class="demo_scale">
-                            <div class="demo_box_content">
-                            	<div class="demo_box_hover">
-                                    <p class="demo_box_title">DEMO:DOM编程艺术</p>
-                                    <span class="demo_box_hover_icon">
-                                        <a href="demo/js原生demo/index.html" target="_blank" class="demo_box_link">
-                                            <img src="image/demo-link.png" alt="" />
-                                        </a>
-                                    </span>
-                                </div>
-                                <img src="image/demo_box1.jpg" alt="" class="demo_box_bg"/>
-                            </div>
-                        </li>
-                        <li class="demo_scale">
-                            <div class="demo_box_content">
-                                <div class="demo_box_hover">
-                                    <p class="demo_box_title">乾程企业</p>
-									<span class="demo_box_hover_icon">
-										<a href="http://www.sctyqc.cn/index.html" target="_blank" class="demo_box_link">
-											<img src="image/demo-link.png" alt="" />
-										</a>
-									</span>
-								</div>
-								<img src="image/demo_box2.jpg" alt="" class="demo_box_bg"/>
-							</div>
-                        </li>
-                        <li class="demo_scale">
-							<div class="demo_box_content">
-                            	<div class="demo_box_hover">
-									<p class="demo_box_title">卓煌企业</p>
-                                    <span class="demo_box_hover_icon">
-                                    	<a href="http://www.sczhuohuang.com" target="_blank" class="demo_box_link">
-											<img src="image/demo-link.png" alt="" />
-                                        </a>
-                                    </span>
-                                </div>
-								<img src="image/demo_box3.jpg" alt="" class="demo_box_bg"/>
-                            </div>
-                        </li>
-                        <li class="demo_scale">
-							<div class="demo_box_content">
-                            	<div class="demo_box_hover">
-                                	<p class="demo_box_title">兰途科技</p>
-                                    <span class="demo_box_hover_icon">
-                                    	<a href="http://www.lantunet.com" target="_blank" class="demo_box_link">
-											<img src="image/demo-link.png" alt="" />
-                                        </a>
-                                    </span>
-                                </div>
-								<img src="image/demo_box4.jpg" alt="" class="demo_box_bg"/>
-                            </div>
-                        </li>
-                    </ul>
-				</div> 
+									<div id="div1">
+											<ul>
+										    	  <li><img src="image/fashion1.png"></li>
+										        <li><img src="image/fashion2.png"></li>
+										        <li><img src="image/fashion3.png"></li>
+										        <li><img src="image/fashion4.png"></li>
+										        <li><img src="image/fashion5.png"></li>
+										        <li><img src="image/fashion6.png"></li>
+										    </ul>
+										</div>
                 <div id="demo_info" class="demo_scale">
-                    <p>这是我的部分demo。</p>
+                    <p>这是我的部分作品。</p>
                     <p>更多demo请移步<a href="#" class="md-trigger" data-modal="modal-3">这里</a>。</p>
                 </div>
             </div>
@@ -293,25 +276,25 @@
                         <span>code</span>
                         <span>dream</span>
                         <span>future</span>
-                    </div>
+                    </div>                
                 </div>
                 <div id="contact_info" class="contact_scale">
                     <ul></ul>
                 </div>
                 <div id="contact_way">
-					<div id="contact_message1" class="contact_message contact_scale">follow me</div>
+					<div id="contact_message1" class="contact_message contact_scale">联系方式</div>
                     <div id="contact_form">
-                        梦想成为前端工程师？<br/>
-                        前端自学迷茫？<br/>
-                        前端面试会问什么？<br/>
-                        想学习该简历怎么制作？<br/><br/>
-                        QQ小群：<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=959d5b7e9bab932c87cdd68372cfefd772293deaeceaba3e015ba35463200fe5">Fe.d小分队</a><br/><br/>
+                        phone:15770835699<br/>
+                        QQ:942046793<br/>
+                        email:942046793@qq.com<br/>
+                        期待加入您的团队<br/><br/>
+                        <!--QQ小群：<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=959d5b7e9bab932c87cdd68372cfefd772293deaeceaba3e015ba35463200fe5">Fe.d小分队</a><br/><br/>-->
                         互相学习交流，共同进步O(∩_∩)O~
                     </div>
                     <div id="contact_message2" class="contact_message">谢谢</div>
                 </div>
             </div>
-            <footer class="contact_scale">
+            <!--<footer class="contact_scale">
 				<div class="contact_scale footer">
                     <a href="http://blog.csdn.net/zhcscs" target="_blank">CSDN</a>|
                     <a href="http://weibo.com/zky2013" target="_blank">微博</a>|
@@ -319,16 +302,16 @@
                     <a href="https://segmentfault.com/u/keyu2016" target="_blank">豆瓣</a>|
                     <a href="https://github.com/zhaoky" target="_blank">Github</a>
                 </div>
-				<div class="contact_scale footer">All Rights Reserved&nbsp;</div>
-				<div class="contact_scale footer"><a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备15021330号</a>&nbsp;Copyright &copy; 2015 - 2016</div>
-			</footer>
+				<!--<div class="contact_scale footer">All Rights Reserved&nbsp;</div>
+				<div class="contact_scale footer"><a href="http://www.miitbeian.gov.cn/" target="_blank">蜀ICP备15021330号</a>&nbsp;Copyright &copy; 2015 - 2016</div>-->
+			</footer>-->
         </div>
 	</div>
     <!-- contact end -->
 </div>
 <!-- home page end -->
 <!-- pop layer -->
-<div class="md-modal md-effect-11" id="modal-1">
+<!--<div class="md-modal md-effect-11" id="modal-1">
 	<div class="md-content">
 		<h3>小黄人O(∩_∩)O~</h3>
 		<div>
@@ -353,8 +336,8 @@
 			<button class="md-close">明白了</button>
 		</div>
 	</div>
-</div>
-<div class="md-modal md-effect-11" id="modal-3">
+</div>-->
+<!--<div class="md-modal md-effect-11" id="modal-3">
     <div class="md-content">
         <h3>移动APP：兰途校园</h3>
         <div class="modal-example">
@@ -373,7 +356,7 @@
         </div>
     </div>
 </div>
-<div class="md-overlay"></div>
+<div class="md-overlay"></div>-->
 <!-- pop layer -->
 </body>
 <script src="js/jquery-1.11.2.min.js"></script>
