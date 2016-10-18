@@ -55,7 +55,6 @@ $(function(){
 				});
 			});	
 			$("aside a").eq(0).addClass("selected").siblings().removeClass("selected");
-			console.log("Hi! 朋友，感谢您阅读简历代码。\n  如果您有什么建议或者想入门前端，欢迎您加入我们,我们互相学习，共同进步^_^ \n %c QQ小群(http://t.cn/RtlQbTq)","color: red");
 		},
 		afterLoad: function(anchorLink,index){
 			if(index==1){
